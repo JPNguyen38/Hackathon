@@ -1,0 +1,43 @@
+<!-- Our website is called Beji is to display different food from across the world.  
+     The different food is to promote and inform users of the cultural differences from around the world.
+     As users are exposed to exotic food they will gain a interest in visiting other parts of the world to try it. -->
+<!-- By Thien Eli Tran, John Paul Nguyen, Isaac Humphries, Brandon Le -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beji - Food of the Month</title>
+    <link rel="stylesheet" href="homeStyle.css"> 
+</head>
+<body>
+    <header class="header">
+        <h1>Beji</h1>
+        <h3>Your Monthly Food Picks!</h3>
+    </header>
+    <div class="container">
+        <section class="current-month sectionHeader">
+            <h2 class="section-title">Foods for <span id="currentMonth"></span></h2>
+            <div class="foods-grid" id="foodContainer0"></div>
+        </section>
+
+        <section class="recommended sectionHeader">
+            <h2 class="section-title">Recommended Foods</h2>
+            <label for="continent">Search by Continent</label>
+            <form action="/action_page.php">
+                <select name="continent" id="continent" onchange="filterByContinent()">
+                    <option value="Worldwide">Worldwide</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            <div class="foods-grid" id="foodContainer1"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

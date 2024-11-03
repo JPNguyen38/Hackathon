@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+* {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+.dish-details {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dish-details img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+} 
+
+.roboto-slab-title {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.dish-details p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dish-name {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #6B4F4F;
+    text-align: center;
+    margin: auto;
+    justify-items: center;
+}
+
+.dish-country,
+.dish-prep-time,
+.dish-servings,
+
+.dish-description {
+    font-size: 2px;
+}
+
+.dish-nutrition,
+.dish-allergies {
+    padding-left: 15px;
+    border-left: 4px solid #6B4F4F;
+    margin-top: 10px;
+}
